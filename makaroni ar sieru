@@ -1,0 +1,101 @@
+Console.WriteLine("trijsturis(1), taisnsturis(2), rinkis(3)");
+double a = Convert.ToDouble(Console.ReadLine());
+
+if (a==1){
+
+    Console.WriteLine("ievadi pamata malu");
+    double m1 = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("ievadi 2. malu");
+    double m2 = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("ievadi 3. malu");
+    double m3 = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("perimetru(1) vai laukumu(2) gribi rekinat?");
+double b = Convert.ToDouble(Console.ReadLine());
+
+switch (b){
+
+    case 1:
+    double p = m1 + m2 +m3;
+    Console.WriteLine("perimetrs ir " +p);
+    break;
+
+    case 2:
+    Console.WriteLine("ievadi augstumu pret pamatu");
+    double h = Convert.ToDouble(Console.ReadLine());
+    double l = m1*h/2;
+    Console.WriteLine("laukums ir " + l);
+    break;
+
+    default :
+    Console.WriteLine("nebus");
+    break;
+
+    }
+
+}
+
+else if (a==2){
+
+    Console.WriteLine("ievadi 1. malu");
+    double t1 = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("ievadi 2. malu");
+    double t2 = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("ievadi 3. malu");
+    double t3 = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("ievadi 4. malu");
+    double t4 = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("perimetru(1) vai laukumu(2) gribi rekinat?");
+double b = Convert.ToDouble(Console.ReadLine());
+
+switch (b){
+
+    case 1:
+    double p = t1 + t2 +t3+t4;
+    Console.WriteLine("perimetrs ir " + p);
+    break;
+
+    case 2:
+    double l = t1*t2;
+    Console.WriteLine("laukums ir " + l);
+    break;
+
+     default :
+    Console.WriteLine("nebus");
+    break;
+
+    }
+
+
+}
+
+else if (a==3){
+
+    Console.WriteLine("ievadi radiusu");
+    double r = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("perimetru(1) vai laukumu(2) gribi rekinat?");
+double b = Convert.ToDouble(Console.ReadLine());
+
+switch (b){
+
+    case 1:
+    double p = 2*Math.PI*r;
+    Console.WriteLine("perimetrs ir " + p);
+    break;
+
+    case 2:
+    double l = (Math.PI* r) *(Math.PI*r);
+    Console.WriteLine("laukums ir " + l);
+    break;
+
+     default :
+    Console.WriteLine("nebus");
+    break;
+
+    }
+
+
+}
+
+else {
+    Console.WriteLine("megini velreiz");
+}
